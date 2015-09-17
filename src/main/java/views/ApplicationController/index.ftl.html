@@ -1,0 +1,76 @@
+<#import "../layout/defaultLayout.ftl.html" as layout> 
+<@layout.myLayout "Buddy's Home">    
+
+<div class="container-fluid">
+<div class="row">
+  <div class="col-sm-12">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <a href="/guest">
+          <img src="/assets/images/guest.jpg" alt="Guest">
+          </a>
+          <div class="carousel-caption">
+            <h3>Invitado</h3>
+            <p class="carousel-paragraph">¡Mirá todos nuestros amigos en el mundo y encontrá el indicado para vos!</p>
+        </div>
+      </div>
+
+        <div class="item">
+          <a href="/host">
+          <img src="/assets/images/host.jpg" alt="Host">
+          </a>
+          <div class="carousel-caption">
+            <h3>Anfitrión</h3>
+            <p class="carousel-paragraph">Comparte tu casa con amigos de todo el mundo.</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <a href="/experiencias">
+          <img src="/assets/images/experiencias.jpg" alt="Experiencias">
+          </a>
+          <div class="carousel-caption">
+            <h3>Experiencias</h3>
+            <p class="carousel-paragraph">¡Lee los comentarios de personas que ya se animaron a viajar con nosotros!.</p>
+          </div>
+        </div>
+
+        <div class="item">
+    	  <a href="/contacto">
+          <img src="/assets/images/contacto.jpg" alt="Contacto">
+          </a>
+          <div class="carousel-caption">
+            <h3>Contactanos</h3>
+            <p class="carousel-paragraph">Ponete en contacto con Buddy's Home y sacate todas las dudas.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="row"><br><br>
+  <div class="col-sm-12"></div>
+</div>
+</div>
+
+</@layout.myLayout>

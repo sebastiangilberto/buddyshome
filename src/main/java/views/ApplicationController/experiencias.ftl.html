@@ -1,0 +1,44 @@
+<#import "../layout/defaultLayout.ftl.html" as layout> 
+<@layout.myLayout "Experiencias">  
+
+<div class="container-fluid">
+	<h2>Listado de experiencias</h2>
+	<div class="row">
+		<div class="col-sm-12">
+			<table id="table_experiencias" class="display" cellspacing="0" width="100%">
+			    <thead>
+			        <tr>
+			            <th>Nombre</th>
+			            <th>Experiencia</th>
+			        </tr>
+			    </thead>
+			    <tbody>
+			        <#list listado as lista>
+			        <tr>
+			            <td>${lista.nombre}</td>
+			            <td>${lista.experiencia}</td>
+			        </tr>
+			        </#list>
+			    </tbody>
+			</table>
+		</div>
+	<div class="row">
+			<div class="col-sm-12"><h3>Contanos tu experiencia</h3></div>
+	</div>
+	<form id="form-signup" action="/procesarExperiencia" method="POST">
+		<div class="row"><br>
+			<div class="col-sm-4"><input id="nombre" name="nombre" type="text" placeholder="Nombre" size="48" required></div>
+			<div class="col-sm-8"></div>
+		</div>
+		<div class="row"><br>
+			<div class="col-sm-4"><textarea form="form-signup" wrap="hard" rows="4" cols="50" id="experiencia" name="experiencia" placeholder="Experiencia" required></textarea></div>
+			<div class="col-sm-8"></div>
+		</div>
+		<div class="row"><br>
+			<div class="col-sm-4"><input id="submit" name="submit" type="submit" value="Enviar"></div><br>
+			<div class="col-sm-8"></div>
+		</div>
+	</form>
+</div>
+
+</@layout.myLayout>

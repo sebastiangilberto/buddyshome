@@ -1,0 +1,36 @@
+/* Add additional stylesheets below
+-------------------------------------------------- */
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+	display: block;
+	height: auto;
+	max-width: 100%;
+	line-height: 1;
+	width: 100%;
+}
+
+div div div p {
+	color: #F8F8F8 ;
+	font-family: Calibri, Verdana;
+	font-size: 20px;
+	font-style: italic;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: darkred;
+    font-family: Verdana;
+    font-style: initial;
+    font-variant: small-caps;
+    font-size: small;
+}
+
+.navbar-inverse .navbar-brand {
+    color: darkred;
+    font-family: Verdana;
+    font-style: inherit;
+}
+
+.navbar-inverse {
+	background-color: crimson;
+	background-image: url("");
+}

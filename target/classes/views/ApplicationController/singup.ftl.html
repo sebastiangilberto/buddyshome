@@ -1,0 +1,33 @@
+<#import "../layout/defaultLayout.ftl.html" as layout> 
+<@layout.myLayout "Sign Up">    
+<div class="container">
+	<h1>Nuevo Usuario</h1><br>
+	<p>Por favor completa los siguientes campos para registrarte</p><br><br>
+	<form action="/singupOk" method="POST">
+		<div class="row">
+			<div class="col-sm-2"><input id="nombre" name="nombre" type="text" placeholder="Nombre" size="50" required></div><br>
+			<div class="col-sm-8"></div>
+		</div>
+		<div class="row"><br>
+			<div class="col-sm-2"><input id="apellido" name="apellido" type="text" placeholder="Apellido" size="50" required></div><br>
+			<div class="col-sm-8"></div>
+		</div>
+		<div class="row"><br>
+			<div class="col-sm-2"><input id="usuario" name="usuario" type="text" placeholder="Usuario" size="50" required></div><br>
+			<div class="col-sm-8"></div>
+		</div>
+		<div class="row"><br>
+			<div class="col-sm-2"><input id="password" name="password" type="password" placeholder="Contraseña" size="50" required></div><br>
+			<div class="col-sm-8"></div>
+		</div>
+		<div class="row"><br>
+			<div class="col-sm-2"><input id="email" name="email" type="email" placeholder="Email" size="50" required></div><br>
+			<div class="col-sm-8"></div>
+		</div>
+		<div class="row"><br><br>
+			<div class="col-sm-1"><input id="submit" name="submit" type="submit" value="Registrarse"></div><br>
+			<div class="col-sm-11"></div>
+		</div>
+	</form>
+</div>
+</@layout.myLayout>

@@ -1,0 +1,43 @@
+<#import "../layout/defaultLayout.ftl.html" as layout> 
+<@layout.myLayout "Host">    
+
+<div class="container-fluid">
+	<h1>¡Compartí tu casa con el mundo!</h1><br>
+	<p>Completá las características de tu hogar para que los demás puedan encontrarla</p><br><br>
+	<form action="/hostOk" method="POST">
+		<div class="row">
+			<div class="col-sm-2"><input id="titulo" name="titulo" type="text" placeholder="Título" size="50" required></div><br>
+			<div class="col-sm-8"></div>
+		</div>
+		<div class="row"><br>
+			<div class="col-sm-2"><input id="pais" name="pais" type="text" placeholder="País" size="50" required></div><br>
+			<div class="col-sm-8"></div>
+		</div>
+		<div class="row"><br>
+			<div class="col-sm-2"><input id="precio" name="precio" type="number" placeholder="Precio" size="50" required></div><br>
+			<div class="col-sm-8"></div>
+		</div>
+		<div class="row"><br>
+			<div class="col-sm-2"><input id="descripcion" name="descripcion" type="text" placeholder="Descripción" size="50" required></div><br>
+			<div class="col-sm-8"></div>
+		</div>
+		<div class="row"><br>
+			<div class="col-sm-2">
+				<select id="estado" name="estado" required>
+				  <option value="disponible">Disponible</option>
+				  <option value="reservado">No Disponible</option>
+				</select><br>
+			<div class="col-sm-8"></div>
+		</div>
+		<div class="row"><br><br>
+			<div class="col-sm-2"><input type="filepicker" id="file" name="file" data-fp-apikey="A0qolodQYTDuA2tIbZKTOz" onchange="alert(event.fpfile.url)" required></div><br>
+			<div class="col-sm-8"></div>
+		</div>
+		<div class="row"><br><br>
+			<div class="col-sm-1"><input id="submit" name="submit" type="submit" value="Compartir Hogar"></div><br>
+			<div class="col-sm-11"></div>
+		</div>
+	</form>
+</div>
+
+</@layout.myLayout>
