@@ -48,11 +48,6 @@ public class ApplicationController {
 	Provider<EntityManager> entityManagerProvider;
 
 	
-	public Result table() {
-
-		return Results.html();
-
-	}	
 	
 //HOME
 		
