@@ -20,10 +20,7 @@ body {
 /*ESTILO DE TEXTO EN SLIDES DE CARRUSEL*/
 
 div div div p {
-	color: #F8F8F8 ;
-	font-family: Calibri, Verdana;
-	font-size: 20px;
-	font-style: italic;	
+
 }
 
 /*ALINEAR CARRUSEL INDEX*/
@@ -48,25 +45,43 @@ div div div p {
     font-family: Verdana;
     font-style: initial;
     font-variant: small-caps;
-    font-size: small;
+    font-size: 15px;
+	margin-top: 20px;
+	border: darkred solid 2px;
+	border-radius: 5px;
+
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+
+	background-color: crimson;
 }
 
 .navbar-inverse .navbar-brand {
     color: darkred;
     font-family: Verdana;
     font-style: inherit;
-}
+ }
 
 .navbar-inverse {
 	background-color: #e4685d;
 	background-image: url("");
+	height: 100px;
+}
+
+#logo-header {
+
+	height: 100px;
+	width: 100px;
+	margin-top: -15px;
+
 }
 
 
 /*ESTILO FOOTER*/
 	
 footer {
-	background: #000;
+	background: rgba(0, 0, 0, 0.4);
 	font-family: Verdana;
     font-style: initial;
     font-variant: small-caps;
@@ -75,8 +90,43 @@ footer {
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 50px;
+    height: auto;
     width: 100%;
+}
+
+.leyenda {
+	color: darkgray;
+	font-size: 15px;
+	margin-top: 15px;
+}
+
+.leyenda:hover {
+	color: antiquewhite;
+	font-size: 18px;
+}
+
+#logo-footer {
+	height: 100px;
+	width: 100px;
+}
+
+.redes-sociales>ul>li {
+	display: inline-block;
+
+}
+
+.img-redsocial {
+	width: 40px;
+	height: 40px;
+}
+
+.img-redsocial:hover {
+	height: 50px;
+	width: 50px;
+}
+
+.redes-sociales>ul>li{
+	margin-top: 30px;
 }
 
 /*DEJAR FOOTER POSICIONADO SIEMPRE ABAJO*/
@@ -132,3 +182,67 @@ body {
 	position:relative;
 	top:1px;
 }
+
+
+.carousel-titulo {
+
+	color: midnightblue;
+    background-color: aliceblue;
+    width: auto;
+    height: auto;
+    font-family: monospace;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    border-color: midnightblue;
+    border: 1px solid;
+}
+
+.carousel-description {
+
+	color: darkred;
+    background-color: antiquewhite;
+    width: 240px;
+    height: auto;
+    font-family: monospace;
+    text-align: center;
+    margin: auto;
+    border: 1px dashed;
+   
+}
+
+.carousel-pais {
+
+	color: darkred;
+    background-color: antiquewhite;
+    width: 240px;
+    height: auto;
+    font-family: monospace;
+    text-align: center;
+    margin: auto;
+    border: 1px dashed;
+}
+
+.carousel-precio {
+
+	color: darkred;
+    background-color: antiquewhite;
+    width: 240px;
+    height: auto;
+    font-family: monospace;
+    text-align: center;
+    margin: auto;
+    border: 1px dashed;
+}
+.carousel-estado {
+
+	color: darkred;
+    background-color: antiquewhite;
+    width: 240px;
+    height: auto;
+    font-family: monospace;
+    text-align: center;
+    margin: auto;
+    border: 1px dashed;	
+}
+
