@@ -4,8 +4,6 @@ body {
     background: url('/assets/images/fondo2.jpg'); 
 }
 
-}
-
 
 /*AJUSTAR CARRUSEL PARA OCUPAR TODO EL ANCHO*/
 
@@ -136,7 +134,7 @@ html {
     min-height: 100%;
 }
 body {
-    margin: 0 0 50px; /* bottom = footer height */
+    margin: 0 0 100px; /* bottom = footer height */
 }
 
 
@@ -246,3 +244,40 @@ body {
     border: 1px dashed;	
 }
 
+#titulo-host {
+	color: midnightblue;
+	font-size: 20px;
+	font-family: Verdana;
+}
+
+.instrucciones-host>li {
+	font-family: "Trebuchet MS";
+	font-weight: bold;
+	font-size: 15px;
+	color: black;
+
+}
+
+#leyenda-host {
+	color: honeydew;
+	font-size: 15px;
+	font-family: "Comic Sans MS";
+	font-weight: bold;
+}
+
+#titulo-guest {
+	font-weight: bold;
+	font-family: Verdana;
+	font-size: 20px;
+	text-align: center;
+	font-variant: small-caps;
+	color: midnightblue;
+}
+
+#leyenda-guest {
+	color: honeydew;
+	font-size: 15px;
+	font-family: "Comic Sans MS";
+	font-weight: bold;
+	text-align: center;
+}

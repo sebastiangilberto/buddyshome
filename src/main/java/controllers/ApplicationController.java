@@ -57,13 +57,7 @@ public class ApplicationController {
 
 	}
 	
-//AYUDA
-		
-	public Result help() {
 
-		return Results.html();
-
-	}		
 	
 //INICIO SESION
 	
